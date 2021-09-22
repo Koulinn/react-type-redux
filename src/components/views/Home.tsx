@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { RouteComponentProps } from 'react-router-dom'
 
-export const Home = () => {
+export const Home = ({...props}:RouteComponentProps) => {
     return (
         <div>
             <h1>I'm alive</h1>
