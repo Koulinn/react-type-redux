@@ -1,5 +1,5 @@
 export {}
-import requests from "../../lib/requests-handlers"
+import requests from "../../lib"
 
 
 export const genericAction = (payload:any) => ({

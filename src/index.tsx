@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import storeExports from './redux/store/index'
 import { PersistGate } from 'redux-persist/integration/react';
 // import {persistor} from '../src/redux/store'
+import requests from './lib/'
 
 ReactDOM.render(
 

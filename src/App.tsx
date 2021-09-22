@@ -10,7 +10,7 @@ function App() {
   return (
     <Container fluid>
       <Router>
-        <Route path="/" exact render={(routerProps:any) =>
+        <Route path="/" exact render={(routerProps) =>
           <Home {...routerProps}/>}>
         </Route>
   
