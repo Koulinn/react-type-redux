@@ -41,7 +41,7 @@ const configPersistance ={
     ]
 }
 
-console.log(initialState, 'from store')
+// console.log(initialState, 'from store')
 
 export const persistedReducer = persistReducer(configPersistance, groupedReducers)
 const store = createStore(

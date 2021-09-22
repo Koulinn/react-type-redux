@@ -21,16 +21,16 @@ const getFromDeezerRapid = async (search:string) => {
         // method: 'POST',
         url: (process as any).env.REACT_APP_DEEZER_ENDPOINT_SEARCH,
         params: { q: search },
-        headers: {
-            'x-rapidapi-host': (process as any).env.REACT_APP_DEEZER_HOST,
-            'x-rapidapi-key': (process as any).env.REACT_APP_DEEZER_KEY
-        }
+        // headers: {
+        //     'x-rapidapi-host': (process as any).env.REACT_APP_DEEZER_HOST,
+        //     'x-rapidapi-key': (process as any).env.REACT_APP_DEEZER_KEY
+        // }
     };
 
     try {
 
         const response = await request(options)
-        console.log(response.data, 'Data from getFromDeezerAPI function')
+        // console.log(response.data, 'Data from getFromDeezerAPI function')
         return response.data.data
     } catch (error) {
         console.log(error, 'Error from getFromDeezerAPI function')
